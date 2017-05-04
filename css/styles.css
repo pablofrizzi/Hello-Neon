@@ -1,5 +1,9 @@
 /*FONTS*/
 
+body {
+    overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'Old Standard TT';
   font-style: normal;
@@ -82,6 +86,7 @@ body {
     padding-bottom: 50px;
     background: #F2F2F2;
     margin: 0 auto;
+    width: 100%;
 }
 
 .about-text h2 {
@@ -108,6 +113,7 @@ body {
 
 /*Gallery start*/
 .gallery-wrapper {
+    width: 100%;
     padding-bottom: 50px;
 }
 
@@ -134,11 +140,12 @@ body {
     margin: 0 auto;
 }
 
-.open-wrapper {
-    color: #FFFEFF;
-}
+
 
 .open-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    color: #FFFEFF;
 }
 
 .open-text {
@@ -152,9 +159,8 @@ body {
 /*Services contact start*/
 .services-contact-wrapper{
     background: linear-gradient(to bottom, #E1D1FE 0%, #7A3FF6 100%);
-    max-width: 1500px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .services {
@@ -194,8 +200,8 @@ body {
 
 .services-text img {
     width: auto;
-/*    float: left;*/
     padding: 10px;
+    display: none;
 }
 
 .contact {
@@ -285,6 +291,4 @@ body {
     padding: 5px 0 5px 0;
 }
 
-*:focus {
-    outline: none;
-}
+
