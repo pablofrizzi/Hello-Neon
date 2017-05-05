@@ -8,12 +8,19 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v2/ElUAY9q6T0Ayx4zWzW63VJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 /*STYLES*/
 
 html, body {
   overflow-x: hidden;
 }
-
 
 body {
     font-family: 'Work Sans', sans-serif;
@@ -26,20 +33,18 @@ body {
 
 /*Header start*/
 
-
 .header-wrapper {
     background: url('../images/herobanner.jpg');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     margin: 0 auto;
     width: 100%;
     height: 100%;
     
 }    
 
-.header {
-
-}
+.header {}
 
 .header-wrapper h1 {
     margin: 0 auto;
@@ -62,8 +67,7 @@ body {
     list-style-type: none;
     margin-bottom: 15px;
     padding: 0;
-    text-align: center;
-  
+    text-align: center; 
 }
 
 .menu ul li {
@@ -84,11 +88,14 @@ body {
 
 /*About start*/
 
-
 .about-wrapper {
     background: #F2F2F2;
     margin: 0 auto;
     width: 100%;
+}
+
+.about-text {
+    margin-bottom: 50px;
 }
 
 .about-text h2 {
@@ -105,15 +112,11 @@ body {
 
 .about-img {
     margin-top: 30px;
-/*    display: none;*/
-}
-
-.about-img img {
-  
-    
+    display: none;
 }
 
 /*Gallery start*/
+
 .gallery-wrapper {
     width: 100%;
     padding-bottom: 50px;
@@ -133,10 +136,12 @@ body {
 }
 
 /*Open time start*/
+
 .open-wrapper {
     background: url('../images/panel.jpg');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -199,18 +204,10 @@ body {
     padding: 0 10px;
 }
 
-
 .services-text img {
     width: auto;
     padding: 10px;
     display: none;
-}
-
-.contact {
-}
-
-.contact-row {
-  
 }
 
 .contact h2 {
@@ -293,4 +290,112 @@ body {
     padding: 5px 0 5px 0;
 }
 
+/*MEDIA QUERIES*/
 
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    
+    /*Header start*/
+    
+    .header-wrapper h1 {
+        font-size: 28rem;
+    }
+
+    .header-wrapper p {
+        position: relative;
+        top: 159px;
+        line-height: 0;
+    }
+    
+    .menu {
+        margin-bottom: 40px;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        padding-bottom: 8px;
+        padding: 0 15px 10px;
+    }
+    
+/*    Servives start*/
+       
+    .services-text {
+        margin-top: 40px;
+    }
+    
+    .services-text img {  
+        display: inline-block;
+        float: left;
+        padding-right: 38px;
+        padding-top: 8px;
+    }
+  
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    
+    /*Header start*/
+    
+    .header-wrapper h1 {
+        font-size: 38rem;
+    }
+    
+    .header-wrapper p {        
+        top: 215px;
+        font-size: 7rem;       
+    }
+    
+    /*About start*/
+    
+    .about-img {
+        display: inline-block;
+        margin-top: 115px;
+    }
+    
+    .about-text p {
+        padding-right: 48px;
+    }
+    
+/*    Contact start*/
+    
+    .contact {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-text {
+        padding: 0;
+    }
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    
+    /*Header start*/
+    
+    .header-wrapper h1 {
+        font-size: 50rem;
+    }
+    
+    .header-wrapper p {        
+        top: 279px;
+        font-size: 8.7rem;       
+    }
+    
+    /*About start*/
+    
+    .about-img {
+        display: inline-block;
+        margin-top: 115px;
+    }
+    
+    .about-text p {
+        padding-right: 136px;
+    }
+        
+}
